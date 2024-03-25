@@ -2,4 +2,4 @@ flask
 flask_sqlalchemy
 flask_login
 flask_principal
-gunicoen
+gunicorn
