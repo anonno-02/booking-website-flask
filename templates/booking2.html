@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet"
+    href="{{url_for('static', filename='style2.css')}}"
+    />
+</head>
+<body>
+    <h1>
+        Book a service!
+    </h1>
+    <form action="/booked2" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="service">Service:</label>
+        <select id="service" name="service" required>
+            <option value="service1">service 1</option>
+            <option value="service2">service 2</option>
+            <option value="service3">service 3</option>
+        </select>
+        <button type="submit">Book!</button>
+    </form>
+</body>
+</html>
